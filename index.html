@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<HTML>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/airbnb.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB Gama</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+        <nav class="navbar border-bottom navbar-light">
+            <img src="img/airbnb-new-logo-2014-e1438134013136.png" width=200px>
+            <a href="#">cadastra-se</a>
+
+        </nav>
+        <div class="container">
+            <div id="div-search" class="row justify-content-center" >
+                <div class="card-body">
+                    <form id="form-search" onsubmit="event.preventDefault()" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-2">
+                                <label for="location-search">Localização</label>
+                                <input type="text" class="form-control" id="location-search"
+                                    placeholder="Para onde você vai?" required>
+                                <div class="invalid-feedback">
+                                    Selecione uma localização
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" class="form-control" id="checkin" required>
+                                <div class="invalid-feedback date-fields">
+                                    Data de checkin
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <label for="checkout">Checkout</label>
+                                <input type="date" class="form-control" id="checkout" required>
+                                <div class="invalid-feedback date-fields">
+                                    Data de checkout
+                                </div>
+                            </div>
+                            <div class="col div-btn-search">
+                                <button type="submit" onclick="handleClickSearch()" class="btn btn-outline-success"><i
+                                        class="fas fa-search"></i>
+                                    Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="cards">
+
+            </div>
+        </div>
+        <div id="rodape" style="background-color: black; padding: 10px; margin-bottom: 0px" width="100%" >
+            <h1>Nycolly Garcia<h1>
+            <h2>Hiring Coders - Nenhum vínculo com a airbnb</h2>
+        </div>
+        
+             
+      <script src="js/index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+  </body>
+
+
+</HTML>
+
+<!-- 
+
+            <div id="cards" class="row">
+                <div class="col-md-12">
+                   <link href="img/airbnb.png">
+                 <h3>AirBnB</h3>
+                </div>
+-->
+
